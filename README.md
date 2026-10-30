@@ -1,4 +1,4 @@
-# 🧠 LeetCode & DSA Solutions
+# 🧠 LeetCode & DSA Solutions For Google Japan ... i love you google 
 
 Welcome to my DSA journey! This repository contains my solutions to various LeetCode problems, automatically synced using LeetSync.
 
