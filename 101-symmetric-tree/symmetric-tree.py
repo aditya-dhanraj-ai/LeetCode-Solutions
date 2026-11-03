@@ -7,7 +7,7 @@
 class Solution:
     def isSymmetric(self, root: TreeNode | None) -> bool:
         if not root:
-            return None
+            return True
         def in_mirror(left , right):
             if not left and not right:
                 return True
