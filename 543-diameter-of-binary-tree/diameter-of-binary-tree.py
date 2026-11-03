@@ -13,8 +13,9 @@ class Solution:
             left_depth=dfs(node.left)
             right_depth=dfs(node.right)
             self.max_depth=max(self.max_depth,left_depth + right_depth)
-            return 1+ max(left_depth , right_depth)
+            return 1 + max(left_depth , right_depth)
         dfs(root)
         return self.max_depth
+
 
 
