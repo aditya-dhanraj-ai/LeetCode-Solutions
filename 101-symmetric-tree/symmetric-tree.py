@@ -7,13 +7,13 @@
 class Solution:
     def isSymmetric(self, root: TreeNode | None) -> bool:
         if not root:
-            return True
-        def ismirror(left , right):
+            return None
+        def in_mirror(left , right):
             if not left and not right:
                 return True
             if not left or not right:
                 return False
             if left.val != right.val:
                 return False
-            return ismirror(left.left , right.right)  and  ismirror(left.right , right.left)
-        return ismirror(root.left , root.right)
+            return in_mirror(left.left , right.right) and in_mirror(left.right , right.left)
+        return in_mirror(root.left , root.right)
