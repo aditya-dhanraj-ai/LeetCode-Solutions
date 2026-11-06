@@ -9,7 +9,7 @@ class Solution:
         while root:
             if root.val==val:
                 return root
-            elif val < root.val:
+            elif root.val > val:
                 root=root.left
             else:
                 root=root.right
